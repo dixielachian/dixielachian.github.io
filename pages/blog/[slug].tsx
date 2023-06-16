@@ -19,7 +19,6 @@ const BlogPost = ({
       <img src={frontMatter.thumbnail} alt={frontMatter.title} />
       <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
     </div>
-    <div></div>
   </Layout>
 );
 

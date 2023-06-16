@@ -9,7 +9,7 @@ const Posts = ({ posts }: {
   return (
     <div>
       {posts.map(({ slug, frontMatter: { title, description } }) => (
-        <Post slug={slug} title={title} description={description} />
+        <Post key={slug} slug={slug} title={title} description={description} />
       ))}
     </div>
   );

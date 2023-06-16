@@ -10,7 +10,7 @@ const Post = ({
   description: string
 }) => {
   return (
-    <Link key={slug} href={`/blog/${slug}`} passHref>
+    <Link href={`/blog/${slug}`} passHref>
       <a>
         <h5>{title}</h5>
         <p>{description}</p>
