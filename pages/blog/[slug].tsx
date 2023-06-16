@@ -15,12 +15,11 @@ const BlogPost = ({
   content: string
 }) => (
   <Layout>
-    <div>
-      <div className='prose prose-sm sm:prose lg:prose-lg mx-auto prose-slate'>
-        <img src={frontMatter.thumbnail} alt={frontMatter.title} />
-        <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
-      </div>
+    <div className='prose prose-sm sm:prose lg:prose-lg mx-auto prose-slate'>
+      <img src={frontMatter.thumbnail} alt={frontMatter.title} />
+      <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
     </div>
+    <div></div>
   </Layout>
 );
 
