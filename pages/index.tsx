@@ -15,7 +15,7 @@ const Home = ({ posts }: {
 }) => {
   return (
     <Layout>
-      <h1>Howdy!</h1>
+      <h3>...</h3>
       <Posts posts={posts}/>
     </Layout>
   );
@@ -45,10 +45,8 @@ export async function getStaticProps() {
   ));
 
   return {
-    props: {
-      posts,
-    }
+    props: { posts }
   };
 };
 
-export default Posts;
+export default Home;
