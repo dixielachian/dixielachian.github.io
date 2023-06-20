@@ -1,5 +1,4 @@
-import styles from '../styles/Home.module.css';
-import Link from 'next/link';
+//import styles from '../styles/Home.module.css';
 import matter from 'gray-matter';
 import fs from 'fs';
 import path from 'path';
@@ -15,7 +14,7 @@ const Home = ({ posts }: {
 }) => {
   return (
     <Layout>
-      <h3>...</h3>
+      {/*<h3>...</h3>*/}
       <Posts posts={posts}/>
     </Layout>
   );
