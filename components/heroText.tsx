@@ -23,7 +23,7 @@ const HeroText = ({ children }: { children: JSX.Element | (string | JSX.Element)
     style2.innerHTML = keyframes2;
     after?.appendChild(style1);
     before?.appendChild(style2);
-    if (after?.style) after?.style.animation = '';
+    if (after!.style) after!.style.animation = '';
     //after?.style.animation = 'glitch-anim-1 2.5s infinite linear alternate-reverse';
     //before?.style.animation = 'glitch-anim-2 3s infinite linear alternate-reverse';
   }, []);
