@@ -21,10 +21,12 @@ const HeroText = ({ children }: { children: JSX.Element | (string | JSX.Element)
     let keyframes2 = `@keyframes glitch-anim-2 { ${setKeyframesRules(32, 2)} }`;
     style1.innerHTML = keyframes1;
     style2.innerHTML = keyframes2;
-    after?.appendChild(style1);
-    before?.appendChild(style2);
-    after.style?.animation = 'glitch-anim-1 2.5s infinite linear alternate-reverse';
-    before.style?.animation = 'glitch-anim-2 3s infinite linear alternate-reverse';
+    document.addEventListener("DOMContentLoaded", () => {
+      after?.appendChild(style1);
+      before?.appendChild(style2);
+      after?.style?.animation? = 'glitch-anim-1 2.5s infinite linear alternate-reverse';
+      before?.style?.animation? = 'glitch-anim-2 3s infinite linear alternate-reverse';  
+    });
   }, []);
 
   return (
