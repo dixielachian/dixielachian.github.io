@@ -12,6 +12,7 @@ const Hero = () => {
           <div className='flex h-full items-center justify-center'>
             <div className='px-6 text-center text-white md:px-12'>
               <Glitch text='Deeds not words' />
+              <br/>
               <Glitch text='Vivere est vincere!' />
             </div>
           </div>
