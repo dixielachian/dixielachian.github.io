@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 
 const Glitch = ({ text }: { text: string }) => {
+  let index: number = Math.floor(Math.random() * 100);
+
   useEffect(() => {
-    let style1 = document.createElement('style');
-    let style2 = document.createElement('style');
-    let after = document.getElementById('after-te1');
-    let before = document.getElementById('before-te1');
+    let style1: HTMLStyleElement  = document.createElement('style');
+    let style2: HTMLStyleElement = document.createElement('style');
+    let after: HTMLSpanElement = document.getElementById(`after-te${index}`);
+    let before: HTMLSpanElement = document.getElementById(`before-te${index}`);
     const setKeyframesRules = (n: number, start: number = 0): string => {
       let steps = '';
       for (let i = start; i <= n; i++) {
@@ -29,9 +31,9 @@ const Glitch = ({ text }: { text: string }) => {
   return (
     <div className='h-full flex justify-center items-center'>
       <h1 className='text-white text-4xl font-bold uppercase relative inline-block'>
-        <span id='before-te1' className='absolute top-0 left-0.5 w-full h-full bg-transparent' style={{ textShadow: '-2px 0 #49FC00', clipPath: 'rect(24px, 550px, 90px, 0)' }} aria-hidden='true'>{text}</span> {/* glitch::before */}
+        <span id={`before-te${index}`} className='absolute top-0 left-0.5 w-full h-full bg-transparent' style={{ textShadow: '-2px 0 #49FC00', clipPath: 'rect(24px, 550px, 90px, 0)' }}>{text}</span> {/* glitch::before */}
         {text}
-        <span id='after-te1' className='absolute top-0 -left-0.5 w-full h-full bg-transparent' style={{ textShadow: '-2px 0 spin(#49FC00, 180)', clipPath: 'rect(85px, 550px, 140px, 0)' }} aria-hidden='true'>{text}</span> {/* glitch::after */}
+        <span id={`after-te${index}`} className='absolute top-0 -left-0.5 w-full h-full bg-transparent' style={{ textShadow: '-2px 0 spin(#49FC00, 180)', clipPath: 'rect(85px, 550px, 140px, 0)' }}>{text}</span> {/* glitch::after */}
       </h1>
     </div>
   );
