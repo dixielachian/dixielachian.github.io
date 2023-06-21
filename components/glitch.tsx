@@ -6,8 +6,8 @@ const Glitch = ({ text }: { text: string }) => {
   useEffect(() => {
     let style1: HTMLStyleElement  = document.createElement('style');
     let style2: HTMLStyleElement = document.createElement('style');
-    let after: HTMLSpanElement = document.getElementById(`after-te${index}`);
-    let before: HTMLSpanElement = document.getElementById(`before-te${index}`);
+    let after: HTMLElement = document.getElementById(`after-te${index}`);
+    let before: HTMLElement = document.getElementById(`before-te${index}`);
     const setKeyframesRules = (n: number, start: number = 0): string => {
       let steps = '';
       for (let i = start; i <= n; i++) {
