@@ -28,7 +28,7 @@ const Nav = () => {
                 { href: '/about', name: 'About' },
                 { href: '/links', name: 'Links' }
               ].map(({ href, name }) => (
-                <li>
+                <li key={name}>
                   <Link href={href} passHref>
                     <a className='block py-2 pl-3 pr-4 text-gray-900 rounded text-gray-400 hover:bg-indigo-700 hover:text-white'>{name}</a>
                   </Link>
