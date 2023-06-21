@@ -5,8 +5,8 @@ const HeroText = ({ children }: { children: JSX.Element | (string | JSX.Element)
   useEffect(() => {
     let style1: HTMLStyleElement  = document.createElement('style');
     let style2: HTMLStyleElement = document.createElement('style');
-    let after: HTMLElement | null = document.getElementById('after-te1');
-    let before: HTMLElement | null = document.getElementById('before-te1');
+    let after = document.querySelector('#after-te1') as HTMLSpanElement | null;
+    let before = document.querySelector('#before-te1') as HTMLSpanElement | null;
     const setKeyframesRules = (n: number, start: number = 0): string => {
       let steps = '';
       for (let i = start; i <= n; i++) {
@@ -21,12 +21,10 @@ const HeroText = ({ children }: { children: JSX.Element | (string | JSX.Element)
     let keyframes2 = `@keyframes glitch-anim-2 { ${setKeyframesRules(32, 2)} }`;
     style1.innerHTML = keyframes1;
     style2.innerHTML = keyframes2;
-    if (after !== null && before !== null) {
-      after.appendChild(style1);
-      before.appendChild(style2);
-      after.style.animation = 'glitch-anim-1 2.5s infinite linear alternate-reverse';
-      before.style.animation = 'glitch-anim-2 3s infinite linear alternate-reverse';    
-    }
+    after?.appendChild(style1);
+    before?.appendChild(style2);
+    after.style.animation = 'glitch-anim-1 2.5s infinite linear alternate-reverse';
+    before.style.animation = 'glitch-anim-2 3s infinite linear alternate-reverse';
   }, []);
 
   return (
