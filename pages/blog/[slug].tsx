@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 
 import Layout from '../../components/layout';
+import Hero from '../../components/hero';
 
 const BlogPost = ({
   frontMatter,
@@ -15,10 +16,21 @@ const BlogPost = ({
   content: string
 }) => (
   <Layout>
-    <div className='prose prose-sm sm:prose lg:prose-lg mx-auto prose-slate'>
+    <Hero
+      img={frontMatter.thumbnail}
+      text={(
+        <>
+          {frontMatter.title}
+          <br/><br/>
+          {frontMatter.subtitle}
+        </>
+      )}
+    />
+    <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
+    {/*<div className='prose prose-sm sm:prose lg:prose-lg mx-auto prose-slate'>
       <img src={frontMatter.thumbnail} alt={frontMatter.title} />
       <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
-    </div>
+    </div>*/}
   </Layout>
 );
 

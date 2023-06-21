@@ -15,7 +15,16 @@ const Home = ({ posts }: {
 }) => {
   return (
     <Layout>
-      <Hero />
+      <Hero
+        img='/img/continental-congress-painting.jpg'
+        text={(
+          <>
+            Deeds not words.
+            <br/><br/>
+            Vivere est vincere!
+          </>
+        )}
+      />
       <Posts posts={posts} />
     </Layout>
   );
