@@ -17,13 +17,8 @@ const Home = ({ posts }: {
     <Layout>
       <Hero
         img='/img/continental-congress-painting.jpg'
-        text={(
-          <>
-            Deeds not words.
-            <br/><br/>
-            Vivere est vincere!
-          </>
-        )}
+        title='Deeds not words'
+        subtitle='Vivere est vincere!'
       />
       <Posts posts={posts} />
     </Layout>

@@ -9,9 +9,11 @@ const Nav = () => {
   return (
     <nav className='bg-base-100 border-gray-700'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-        <a href='#' className='flex items-center'>
-          <Logo />
-        </a>
+        <Link href='/' passHref>
+          <a className='flex items-center'>
+            <Logo />
+          </a>
+        </Link>
 
         <button className='inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600' onClick={() => setShow(!show)}>
           <span className='sr-only'>Open main menu</span>

@@ -1,6 +1,12 @@
 import { useEffect } from 'react';
 
-const HeroText = ({ children }: { children: JSX.Element | (string | JSX.Element)[] }) => {
+const HeroText = ({
+  title,
+  subtitle
+}: {
+  title: string,
+  subtitle: string
+}) => {
 
   useEffect(() => {
     let style1: HTMLStyleElement  = document.createElement('style');
@@ -27,12 +33,23 @@ const HeroText = ({ children }: { children: JSX.Element | (string | JSX.Element)
     before!.style.animation = 'glitch-anim-2 3s infinite linear alternate-reverse';
   }, []);
 
+  const Text = () => (
+    <>
+      <h1 className='font-bold text-5xl my-4'>{title}</h1>
+      <h2 className='italic text-xl'>{subtitle}</h2>
+    </>
+  );
+
   return (
     <div className='h-full flex justify-center items-center'>
       <h1 className='text-white text-4xl font-bold uppercase relative inline-block'>
-        <span id='before-te1' className='absolute top-0 left-0.5 w-full h-full bg-transparent' style={{ textShadow: '-2px 0 #49FC00', clipPath: 'rect(24px, 550px, 90px, 0)' }}>{children}</span> {/* glitch::before */}
-        {children}
-        <span id='after-te1' className='absolute top-0 -left-0.5 w-full h-full bg-transparent' style={{ textShadow: '-2px 0 spin(#49FC00, 180)', clipPath: 'rect(85px, 550px, 140px, 0)' }}>{children}</span> {/* glitch::after */}
+        <span id='before-te1' className='absolute top-0 left-0.5 w-full h-full bg-transparent' style={{ textShadow: '-2px 0 #49FC00', clipPath: 'rect(24px, 550px, 90px, 0)' }}>
+          <Text />
+        </span> {/* glitch::before */}
+          <Text />
+          <span id='after-te1' className='absolute top-0 -left-0.5 w-full h-full bg-transparent' style={{ textShadow: '-2px 0 spin(#49FC00, 180)', clipPath: 'rect(85px, 550px, 140px, 0)' }}>
+            <Text />
+          </span> {/* glitch::after */}
       </h1>
     </div>
   );

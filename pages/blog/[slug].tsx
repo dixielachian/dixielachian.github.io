@@ -5,6 +5,7 @@ import { marked } from 'marked';
 
 import Layout from '../../components/layout';
 import Hero from '../../components/hero';
+import PostBody from '../../components/postBody';
 
 const BlogPost = ({
   frontMatter,
@@ -18,19 +19,10 @@ const BlogPost = ({
   <Layout>
     <Hero
       img={frontMatter.thumbnail}
-      text={(
-        <>
-          {frontMatter.title}
-          <br/><br/>
-          {frontMatter.subtitle}
-        </>
-      )}
+      title={frontMatter.title}
+      subtitle={frontMatter.subtitle}
     />
-    <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
-    {/*<div className='prose prose-sm sm:prose lg:prose-lg mx-auto prose-slate'>
-      <img src={frontMatter.thumbnail} alt={frontMatter.title} />
-      <div dangerouslySetInnerHTML={{__html: marked(content)}}/>
-    </div>*/}
+    <PostBody body={marked(content)} />
   </Layout>
 );
 

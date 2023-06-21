@@ -5,3 +5,7 @@
 body {
   @apply bg-base-100 w-screen h-screen overflow-x-hidden;
 }
+
+img {
+  @apply w-3/5 h-[80] rounded mx-auto;
+}

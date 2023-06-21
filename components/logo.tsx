@@ -6,7 +6,7 @@ const Logo = () => {
     <>
       <Image className='rounded-2xl' width={90} height={90} src={avatar} alt='Logo' />
       <h1 className='ml-6 self-center text-3xl font-semibold whitespace-nowrap text-white'>
-        Dixielachian Futurism
+        Cavalier Futurism
       </h1>
     </>
   );

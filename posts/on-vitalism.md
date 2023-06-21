@@ -9,4 +9,4 @@ Test markdown text here
 
 ## This is a test Markdown
 
-![title](/img/blog/hitler-constitution.jpeg)
+![Hitler putting the constitution on lifesupport](/img/blog/hitler-constitution.jpeg)
