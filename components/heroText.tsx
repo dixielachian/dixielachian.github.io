@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const HeroText = ({ children }: { children: JSX.Element }) => {
+const HeroText = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
 
   useEffect(() => {
     let style1: HTMLStyleElement  = document.createElement('style');
