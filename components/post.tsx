@@ -12,8 +12,8 @@ const Post = ({
   return (
     <Link href={`/blog/${slug}`} passHref>
       <a>
-        <h5>{title}</h5>
-        <p>{description}</p>
+        <h5 className='text-white'>{title}</h5>
+        <p className='text-white'>{description}</p>
         <hr />
       </a>
     </Link>

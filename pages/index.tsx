@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 import Layout from '../components/layout';
+import Hero from '../components/hero';
 import Posts from '../components/posts';
 
 const Home = ({ posts }: {
@@ -14,8 +15,8 @@ const Home = ({ posts }: {
 }) => {
   return (
     <Layout>
-      {/*<h3>...</h3>*/}
-      <Posts posts={posts}/>
+      <Hero />
+      <Posts posts={posts} />
     </Layout>
   );
 };
