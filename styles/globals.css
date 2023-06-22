@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Backyard';
+  src: url('../public/fonts/BackyardBlack_PERSONAL.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 body {
   @apply bg-base-100 w-screen h-screen overflow-x-hidden;
 }

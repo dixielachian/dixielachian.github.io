@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+//import { aborReg, inter } from "../public/fonts";
+
 const HeroText = ({
   title,
   subtitle
@@ -34,10 +36,12 @@ const HeroText = ({
   }, []);
 
   const Text = () => (
-    <>
+    <span style={{
+      fontFamily: 'Backyard'
+    }}>
       <h1 className='font-bold text-5xl my-4'>{title}</h1>
       <h2 className='italic text-xl'>{subtitle}</h2>
-    </>
+    </span>
   );
 
   return (
