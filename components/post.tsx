@@ -13,7 +13,7 @@ const Post = ({
   }
 }: {
   slug: string,
-  thumbnail: {
+  frontMatter: {
     title: string,
     subtitle: string,
     date: string,
