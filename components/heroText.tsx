@@ -20,7 +20,7 @@ const HeroText = ({
     <div className={styles.container} style={{ fontFamily: font }}>
       {text.split(' ').map((word: string) => (
         <div className={'px-1 ' + size}>
-          <div className={styles.glitch} dataText={word}>{word}</div>
+          <div className={styles.glitch} data-text={word}>{word}</div>
           <div className={styles.glow}>{word}</div>
         </div>
       ))}
@@ -31,8 +31,8 @@ const HeroText = ({
 
   return (
     <div className='block'>
-      <GlitchText text={title} font='Anglican' size='text-6xl'/>
-      <GlitchText text={subtitle} font='Old London' size='text-2xl' />
+      {/*<GlitchText text={title} font='Anglican' size='text-6xl'/>*/}
+      <GlitchText text={subtitle} font='Mobile Infantry Italic' size='text-4xl' />
     </div>
   );
 };

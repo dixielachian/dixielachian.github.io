@@ -52,8 +52,22 @@
 }
 
 @font-face {
+  font-family: 'Freedom Fighter Italic';
+  src: url('../public/fonts/FreedomFighterCondensedItalic.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Mobile Infantry';
   src: url('../public/fonts/mobile-infantry.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mobile Infantry Italic';
+  src: url('../public/fonts/MobileInfantryCondensedItalic.otf');
   font-weight: bold;
   font-style: normal;
 }
