@@ -5,7 +5,7 @@ const PostBody = ({
   title,
   subtitle
 }: {
-  body: JSX.Element | JSX.Element[],
+  body: string,
   title: string,
   subtitle: string
 }) => {
