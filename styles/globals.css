@@ -72,6 +72,43 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NeuroPolitical';
+  src: url('../public/fonts/neuropolitical.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raginy';
+  src: url('../public/fonts/RaginyRegular.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rexlia';
+  src: url('../public/fonts/rexlia.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Divlit';
+  src: url('../public/fonts/divlit.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Charmset';
+  src: url('../public/fonts/Charmset.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 
 body {
   @apply bg-base-100 w-screen h-screen overflow-x-hidden;
