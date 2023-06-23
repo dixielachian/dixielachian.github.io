@@ -16,9 +16,9 @@ const Home = ({ posts }: {
   return (
     <Layout>
       <Hero
-        img='/img/continental-congress-painting.jpg'
-        title='Deeds not words'
-        subtitle='Vivere est vincere!'
+        img='/img/blog/continental-congress-painting.jpg'
+        title='Vivere est vincere!'
+        subtitle=''
       />
       <Posts posts={posts} />
     </Layout>

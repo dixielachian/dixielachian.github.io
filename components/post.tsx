@@ -1,23 +1,33 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import Hero from './hero';
 
 const Post = ({
   slug,
-  title,
-  subtitle,
-  date
+  frontMatter: {
+    title,
+    subtitle,
+    date,
+    thumbnail
+  }
 }: {
   slug: string,
-  title: string,
-  subtitle: string,
-  date: string
+  thumbnail: {
+    title: string,
+    subtitle: string,
+    date: string,
+    thumbnail: string
+  }
 }) => {
   return (
     <Link href={`/blog/${slug}`} passHref>
       <a>
-        <h5 className='text-white'>{title}</h5>
-        <p className='text-white'>{subtitle}</p>
-        <p className='text-white'>{date}</p>
-        <hr />
+        <Hero
+          img={thumbnail}
+          title={title}
+          subtitle={subtitle}
+        />
       </a>
     </Link>
   );

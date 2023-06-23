@@ -1,6 +1,6 @@
 ---
-title: 'Native Americans Beware of Foriegn Influnence!'
-subtitle: 'Everyone is an American'
+title: 'On Alienism and Kinship'
+subtitle: 'Native Americans Beware of Foriegn Influnence!'
 date: '2021-08-30T13:07:44.675Z'
 thumbnail: '/img/blog/native-americans-onto-victory.jpg'
 ---

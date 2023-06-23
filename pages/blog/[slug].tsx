@@ -22,7 +22,11 @@ const BlogPost = ({
       title={frontMatter.title}
       subtitle={frontMatter.subtitle}
     />
-    <PostBody body={marked(content)} />
+    <PostBody
+      body={marked(content)}
+      title={frontMatter.title}
+      subtitle={frontMatter.subtitle}
+    />
   </Layout>
 );
 

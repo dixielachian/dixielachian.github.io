@@ -4,7 +4,14 @@
 
 @font-face {
   font-family: 'Backyard';
-  src: url('../public/fonts/BackyardBlack_PERSONAL.ttf');
+  src: url('../public/fonts/BackyardBlack.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anglican';
+  src: url('../public/fonts/AnglicanText.ttf');
   font-weight: bold;
   font-style: normal;
 }

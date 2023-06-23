@@ -8,8 +8,8 @@ const Posts = ({ posts }: {
 }) => {
   return (
     <div>
-      {posts.map(({ slug, frontMatter: { title, subtitle, date } }) => (
-        <Post key={slug} slug={slug} title={title} subtitle={subtitle} date={date} />
+      {posts.map(({ slug, frontMatter }) => (
+        <Post key={slug} slug={slug} frontMatter={frontMatter} />
       ))}
     </div>
   );
