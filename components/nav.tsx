@@ -7,7 +7,7 @@ const Nav = () => {
   const [ show, setShow ] = useState(false);
 
   return (
-    <nav className='bg-base-100 border-gray-700'>
+    <nav className='bg-base-100 border-gray-700 bg-opacity-75 fixed top-0 z-50 w-screen h-24'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
         <Link href='/' passHref>
           <a className='flex items-center'>

@@ -8,8 +8,10 @@ const Layout = ({ children }: { children: Fragment }) => {
   return (
     <>
       <Nav />
-      {children}
-      <Footer />
+      <div className='mt-24 relative'>
+        {children}
+        <Footer />
+      </div>
     </>
   );
 };

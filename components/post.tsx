@@ -22,7 +22,7 @@ const Post = ({
 }) => {
   return (
     <Link href={`/blog/${slug}`} passHref>
-      <a>
+      <a title={title}>
         <Hero
           img={thumbnail}
           title={title}
