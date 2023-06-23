@@ -4,8 +4,8 @@ const HeroText = ({
   title,
   subtitle
 }: {
-  title: JSX.Element | string,
-  subtitle: JSX.Element | string
+  title: string,
+  subtitle: string
 }) => {
 
   const GlitchText = ({

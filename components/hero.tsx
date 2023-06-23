@@ -6,8 +6,8 @@ const Hero = ({
   subtitle
 }: {
   img: string,
-  title: JSX.Element | string,
-  subtitle: JSX.Element | string
+  title: string,
+  subtitle: string
 }) => {
   return (
     <>
