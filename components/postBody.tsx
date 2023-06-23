@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import styles from '../styles/postBody.module.css';
 
 const PostBody = ({
@@ -7,7 +5,7 @@ const PostBody = ({
   title,
   subtitle
 }: {
-  body: Fragment,
+  body: JSX.Element | JSX.Element[],
   title: string,
   subtitle: string
 }) => {
