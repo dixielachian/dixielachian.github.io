@@ -13,12 +13,13 @@ const Post = ({
   }
 }: {
   slug: string,
-  frontMatter: {
+  frontMatter: { [ key: string ]: string }
+  /*{
     title: string,
     subtitle: string,
     date: string,
     thumbnail: string
-  }
+  }*/
 }) => {
   return (
     <Link href={`/blog/${slug}`} passHref>

@@ -1,10 +1,10 @@
 import Post from './post';
 
 const Posts = ({ posts }: {
-  posts: [{
+  posts: [ {
     slug: string,
     frontMatter: { [ key: string ]: string }
-  }]
+  } ]
 }) => {
   return (
     <div>

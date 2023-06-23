@@ -19,7 +19,7 @@ const HeroText = ({
   }) => (
     <div className={styles.container} style={{ fontFamily: font }}>
       {text.split(' ').map((word: string) => (
-        <div className={'px-1 ' + size}>
+        <div className={'px-1 ' + size} key={word}>
           <div className={styles.glitch} data-text={word}>{word}</div>
           <div className={styles.glow}>{word}</div>
         </div>

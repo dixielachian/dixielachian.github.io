@@ -8,10 +8,10 @@ import Hero from '../components/hero';
 import Posts from '../components/posts';
 
 const Home = ({ posts }: {
-  posts: [{
+  posts: [ {
     slug: string,
     frontMatter: { [ key: string ]: string }
-  }]
+  } ]
 }) => {
   return (
     <Layout>
