@@ -24,6 +24,13 @@
 }
 
 @font-face {
+  font-family: 'Old London';
+  src: url('../public/fonts/OldLondon.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Black Iron';
   src: url('../public/fonts/BlackIron.ttf');
   font-weight: bold;

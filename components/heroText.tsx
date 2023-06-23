@@ -4,8 +4,8 @@ const HeroText = ({
   title,
   subtitle
 }: {
-  title: string,
-  subtitle: string
+  title: JSX.Element | string,
+  subtitle: JSX.Element | string
 }) => {
 
   const GlitchText = ({
@@ -32,7 +32,7 @@ const HeroText = ({
   return (
     <div className='block'>
       <GlitchText text={title} font='Anglican' size='text-6xl'/>
-      <GlitchText text={subtitle} font='Kingthings' size='text-2xl' />
+      <GlitchText text={subtitle} font='Old London' size='text-2xl' />
     </div>
   );
 };
