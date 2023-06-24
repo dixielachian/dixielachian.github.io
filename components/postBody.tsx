@@ -10,7 +10,7 @@ const PostBody = ({
   subtitle: string
 }) => {
   return (
-    <div className='w-screen py-14'>
+    <div className='w-screen py-24'>
       <div className='text-white mx-auto w-1/2'>
         <h1 className='text-5xl text-center p-2' style={{ fontFamily: 'Raginy' }}>{title}</h1>
         <h2 className='text-xl text-center mb-8' style={{ fontFamily: 'NeuroPolitical' }}>{subtitle}</h2>

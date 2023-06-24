@@ -1,6 +1,7 @@
 
-.body p:nth-child(1)::first-letter {
-  @apply text-red-500 text-8xl bg-red-700 px-6 py-3 mx-6;
+.body p:first-child:first-letter {
+  /*@apply text-red-500 bg-red-700 text-8xl px-6 py-3 mx-6;*/
+  @apply text-9xl mx-4 my-8 float-left leading-4;
   font-family: Anglican;
 }
 
