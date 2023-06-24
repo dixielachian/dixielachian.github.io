@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
   return (
     <>
       <Nav />
-      <div className='mt-24 relative'>
+      <div className='mt-24 relative bg-base-100'>
         {children}
         <Footer />
       </div>

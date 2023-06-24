@@ -31,9 +31,8 @@ const HeroText = ({
 
   return (
     <div className='block'>
-      {/*<GlitchText text={title} font='Anglican' size='text-7xl'/>*/}
-      {/*Charmset, Divlit, Raginy, */}
-      <GlitchText text={subtitle} font='NeuroPolitical' size='text-3xl' />
+      <GlitchText text={title} font='Anglican' size='text-7xl' />
+      <GlitchText text={subtitle} font='Charmset' size='text-2xl' />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 ---
-title: 'On Conservatism and Vitalism'
-subtitle: 'The Prognosis and Antidote to Conservatism'
+title: 'The Prognosis and Antidote to Conservatism'
+subtitle: 'On Conservatism and Vitalism'
 date: '2021-08-30T13:07:44.675Z'
 thumbnail: '/img/blog/hitler-constitution-sm.jpeg'
 ---

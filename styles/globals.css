@@ -80,6 +80,13 @@
 }
 
 @font-face {
+  font-family: 'Fortune Soldier';
+  src: url('../public/fonts/FortuneSoldier.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Raginy';
   src: url('../public/fonts/RaginyRegular.otf');
   font-weight: bold;
